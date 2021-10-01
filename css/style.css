@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root { 
+    --font: 'Roboto', sans-serif;
+    --color-red: #D6000D;
+    --color-black: #212121;
+    --color-light: #FFFFFF;
+}
+
+html {
+    height: 100%;
+}
+
+main {
+    font-family: var(--font);
+    font-size: 25px;
+    color: var(--color-red);
+}
+header {
+    position: absolute;
+    width: 100vw;
+    height: 18vh;
+    background-color: var(--color-light);
+    display: inline-block;
+}
+
+[codar-logo] {
+    position: relative;
+    font-size: 2.2em;
+    float: left;
+    left: 3vw;
+    top: 4vh;
+    font-style: oblique;
+}
+
+[codar-logo] span {
+    color: var(--color-black);
+    padding-left: .5vh;
+}
+
+nav  ul {
+    position: absolute;
+    width: 50vw;
+    top: 8vh;
+    left: 48vw;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+}
+
+li > a {
+    font-weight: 400;
+    margin-left: 2.4vw;
+    font-size: 1.1em;
+    color: var(--color-black)
+}
+
+a {
+    text-decoration: none;
+}
+
+[button] a {
+    padding: .8vw 5.2vw; 
+    background-color: var(--color-red);
+    border-radius: 15px;
+    color: var(--color-light)
+}
+
+[codar-banner] {
+    width: 100vw;
+    height: 100vh;
+}
+
+[codar-banner] [banner-img] img {
+    width: 33vw;
+    height: 58vh;
+    background-color: #FFF;
+    position: relative;
+    float: left;
+    top: 36vh;
+    left: 14vw;
+}
+
+[codar-banner] [text-secundary] {
+    width: 40vw; 
+    height: 30vh; 
+    background-color:#FFF;
+    position: relative;
+    float: right;
+    top: 44vh;
+    right: 5vw;
+}
+
+[codar-banner] [text-secundary] h2 {
+    font-weight: 900;
+    font-size: 1em;
+    color: var(--color-black)
+}
+
+[codar-banner] [text-main] {
+    display: block;
+    font-weight: 900;
+    font-size: 2.8em;
+    color: var(--color-red)
+}
+
+[codar-banner] [button] {
+    position: relative;
+    top: 10vh;
+    float: left;
+}
+
+@media only screen and (max-width: 500px) {
+    [codar-logo] {
+        width: 100vw;
+        display: inline-block;
+        left: 0vw;
+        top: 7vh;
+        text-align: center;
+    }
+
+    nav  ul {
+        position: relative;
+        width: 100vw;
+        display: inline-block;
+        left: 0vw;
+        top: 10vh;
+        text-align: center;
+}
+
+    ul [button] {
+        display: none;
+    }
+
+    [codar-banner] [banner-img] img {
+        position: relative;
+        width: 70vw;
+        height: 40vh;
+        left: 15vw;
+    }
+
+    [codar-banner] [text-secundary] {
+        width: 100vw;
+        top: 45vh;
+        left: 0vw;
+        right: 0vw;
+        text-align: center;
+    }
+
+    [codar-banner] [text-secundary] h2 {
+        font-size: .8em;
+        text-align: center;
+    }
+
+    [codar-banner] [text-main] {
+        font-size: 2.5em;
+    }
+    
+    [button] a {
+        padding: 4vw 5vw; 
+        padding: 3vw 15vw;
+    }
+
+    [codar-banner] [button]  {
+        position: relative;
+        top: 8vh;
+        float: none;
+    }
+
+    [codar-banner] [button] a {
+        font-weight: 300;
+        font-size: .9em ;
+    }
+
+}
