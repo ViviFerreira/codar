@@ -1,9 +1,9 @@
 ### Desafio do [Devchallenge](https://devchallenge.com.br/challenges) 
 
-## Techs: 
+### Techs: 
 - HTML<br>
 - CSS
 
-## [Acessar Página](https://viviferreira.github.io/codar/) 
+### [Acessar Página](https://viviferreira.github.io/codar/) 
 ### [...] Em desenvolvimento 
 
