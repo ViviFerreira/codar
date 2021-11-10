@@ -178,6 +178,7 @@ a {
     font-size: 1.6em;
     font-family: var(--font);
     padding: 2em 0 0 1em;
+    font-weight: 400;
 }
 
 [call] .call-input .button {
@@ -186,4 +187,58 @@ a {
 
 [call] .call-input .button a {
     padding: 16px 40px;
+}
+
+[depositions] {
+    display: flex;
+    justify-content: center;
+    margin-top: 8em;
+}
+
+[depositions] .group-cards {
+    width: 87vw;
+    display: grid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+[depositions] .card {
+    width: 42vw;
+    height: 200px;
+    background-color: var(--color-gray);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+[depositions] .card .card-circle {
+    align-self: flex-start;
+    margin-top: 1.2em;
+    width: 18%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: var(--color-red);
+}
+
+[depositions] .card .card-text {
+    width: 62%;
+    font-size: .7em;
+    font-family: var(--font);
+    color: var(--color-black);
+    text-align: justify;   
+    margin-left: 2em; 
+    
+}
+
+[depositions] .card .card-people {
+    margin-top: .3em;
+    font-size: 1.7em;
+}
+[depositions] .card .card-company {
+    margin-top: .1em;
+    font-size: 1.1em;
+    font-weight: 600;
 }
