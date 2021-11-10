@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/fonts/roboto.css">
     <link rel="stylesheet" href="css/style.css">
+    
     <title>Codar</title>
 </head>
 
 <body>
-    <main codar-page>
+    <div codar-page>
         <header>
-            <h1 codar-logo>Codar<span>.</span></h1>
+            <h1 class="logo">Codar<span>.</span></h1>
             <nav>
                 <ul>
                     <li>
@@ -25,25 +26,90 @@
                     <li>
                         <a href="http://">Contato</a> 
                     </li>
-                    <li button>
+                    <li class="button">
                         <a href="http://">Login</a> 
                     </li>
                 </ul>
             </nav>
         </header> 
-        <section codar-banner>
-            <div banner-img>
+        <section banner>
+            <div class="banner-img">
                 <img src="assets/img/video_call.png" alt="device">
             </div>
 
-            <div text-secundary>
-                <h2> Alavanque seu negócio com um <span text-main>Website incrível</span></h2>
-                <div button>
+            <div class="banner-text">
+                <h2> Alavanque seu negócio com um <span class="text-main">Website incrível</span></h2>
+                <div class="button">
                     <a href="#">Solicitar orçamento</a>
                 </div>
             </div>
         </section>  
-    </main>
+        <section options>
+            <ul>
+                <li> Domínio personalizado </li>
+                <li> Hospedagem </li>
+                <li> Site responsivo </li>
+                <li> Redes sociais </li>
+                <li> Chat online </li>
+                <li> Blog integrado </li>
+            </ul>
+            <div class="options-img"> 
+                <img src="assets/img/coding_.png" alt="device">
+            </div> 
+        </section>
+        
+            <section call>
+                <h4>Nossa equipe está à disposição!</h4>
+                <div class="call-input">
+                    <input type="text" name="celular" id="celular" placeholder="Celular">
+                    <div class="button"><a href="#">Ligamos pra você</a> </div>
+                </div>
+            </section>
+       
+        <section depositions>
+            <div card>
+                <div card-circle></div>
+                <div card-text>Já tive experiências com outras 4 empresas da área e a Codar é sem sombra de dúvidas superior em todos os aspectos.</div>
+                <div card-people>Pedro Ferreira</div>
+                <div card-company>Construtora Minari</div>
+            </div>
+            <div card>
+                <div card-circle></div>
+                <div card-text>Processos bem simples e criação de um site exatamente como a minha escola queria!</div>
+                <div card-people>Maria Rita</div>
+                <div card-company>Escola Criança Feliz</div>
+            </div>
+        </section>
+        <footer>
+            <section codar-footer>
+                <h5>Codar.</h5>
+                <h6>Criamos websites incríveis</h6>
+            </section>
+            <section about-codar>
+                <ul>
+                    <li>Sobre</li>
+                    <li>Contato</li>
+                    <li>Redes sociais</li>
+                </ul>
+            </section>
+            <section about-description>
+                <ul>
+                    <li>Amamos criar soluções e 
+                        <span> entregar sites incríveis </span>
+                    </li>
+                    <li>123 Av. Manjar - Nárnia 
+                        <span> +55 96 2321-3131 </span> 
+                        <span> contato@codar.com </span>
+                    </li>
+                    <ol>
+                        <li><i class="bi bi-facebook"></i></li>
+                        <li><i class="bi bi-instagram"></i></li>
+                        <li><i class="bi bi-twitter"></i></li>
+                    </ol>
+                </ul>
+            </section>
+        </footer>
+    </div>
     
 </body>
 

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css");
 
 * {
     margin: 0;
@@ -10,54 +11,59 @@
     --color-red: #D6000D;
     --color-black: #212121;
     --color-light: #FFFFFF;
+    --color-gray: #DCDCDC;
 }
 
 html {
+    width: 100%;
     height: 100%;
+    box-sizing: border-box;
 }
 
-main {
+[codar-page] {
     font-family: var(--font);
     font-size: 25px;
     color: var(--color-red);
-}
-header {
-    position: absolute;
-    width: 100vw;
-    height: 18vh;
     background-color: var(--color-light);
-    display: inline-block;
 }
 
-[codar-logo] {
-    position: relative;
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20vh;
+}
+
+.logo {
     font-size: 2.2em;
-    float: left;
-    left: 3vw;
-    top: 4vh;
+    margin-left: 35px;
     font-style: oblique;
 }
 
-[codar-logo] span {
+.logo span {
     color: var(--color-black);
     padding-left: .5vh;
 }
 
-nav  ul {
-    position: absolute;
-    width: 50vw;
-    top: 8vh;
-    left: 48vw;
-    text-align: center;
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;        
 }
 
-ul li {
-    display: inline-block;
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 ;
 }
 
-li > a {
+nav ul li {
+    list-style: none;
+    margin-right: 40px;
+}
+
+nav ul li > a {
     font-weight: 400;
-    margin-left: 2.4vw;
     font-size: 1.1em;
     color: var(--color-black)
 }
@@ -66,117 +72,118 @@ a {
     text-decoration: none;
 }
 
-[button] a {
-    padding: .8vw 5.2vw; 
+.button a {
+    padding: .8vw 5vw; 
     background-color: var(--color-red);
     border-radius: 15px;
-    color: var(--color-light)
+    color: var(--color-light);
+} 
+
+[banner] {
+    display: grid;
+    grid-template: 80vh / 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
-[codar-banner] {
-    width: 100vw;
-    height: 100vh;
+[banner] .banner-text {
+    margin-left: 3em;
+}
+[banner] .banner-img {
+    margin: 3em 0 0 2em;
 }
 
-[codar-banner] [banner-img] img {
-    width: 33vw;
-    height: 58vh;
-    background-color: #FFF;
-    position: relative;
-    float: left;
-    top: 36vh;
-    left: 14vw;
+[banner] .banner-img img {   
+    width: 32vw;
+    height: 60vh;
 }
 
-[codar-banner] [text-secundary] {
-    width: 40vw; 
-    height: 30vh; 
-    background-color:#FFF;
-    position: relative;
-    float: right;
-    top: 44vh;
-    right: 5vw;
-}
-
-[codar-banner] [text-secundary] h2 {
+[banner] .banner-text h2 {
     font-weight: 900;
     font-size: 1em;
-    color: var(--color-black)
+    color: var(--color-black);
 }
 
-[codar-banner] [text-main] {
-    display: block;
+[banner] .text-main {
+    display: inline-block;
     font-weight: 900;
     font-size: 2.8em;
     color: var(--color-red)
 }
 
-[codar-banner] [button] {
-    position: relative;
-    top: 10vh;
-    float: left;
+[banner] .button {
+    margin-top: 10vh;
+} 
+
+[options] {
+    display: grid;
+    grid-template: 450px / 1fr 1fr;
+    margin-top: 8em;
+    justify-items: center;
+    align-items: center;
 }
 
-@media only screen and (max-width: 500px) {
-    [codar-logo] {
-        width: 100vw;
-        display: inline-block;
-        left: 0vw;
-        top: 7vh;
-        text-align: center;
-    }
-
-    nav  ul {
-        position: relative;
-        width: 100vw;
-        display: inline-block;
-        left: 0vw;
-        top: 10vh;
-        text-align: center;
+[options] ul {
+    list-style-image: url('../assets/img/check.png');
+    justify-self: center;
 }
 
-    ul [button] {
-        display: none;
-    }
+[options] .options-img {
+    justify-self: center;
+    margin-right: 3em;
+}
 
-    [codar-banner] [banner-img] img {
-        position: relative;
-        width: 75vw;
-        height: 40vh;
-        left: 15vw;
-    }
+[options] .options-img img {
+    width: 500px;
+    height: 450px;
+}
 
-    [codar-banner] [text-secundary] {
-        width: 100vw;
-        top: 45vh;
-        left: 0vw;
-        right: 0vw;
-        text-align: center;
-    }
+[options] ul li {
+    color: var(--color-black);
+    font-size: 1.2em;
+    padding-left: 20px;
+    margin-top: 10px;
+}
 
-    [codar-banner] [text-secundary] h2 {
-        font-size: .8em;
-        text-align: center;
-    }
+[call] {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5.5em;
+}
 
-    [codar-banner] [text-main] {
-        font-size: 2.5em;
-    }
-    
-    [button] a {
-        padding: 4vw 5vw; 
-        padding: 3vw 15vw;
-    }
+[call] h4 {
+    color: var(--color-black);
+}
 
-    [codar-banner] [button]  {
-        position: relative;
-        top: 8vh;
-        float: none;
-    }
+[call] .call-input {
+    display: flex;
+    height: 100px;
+    align-items: center; 
+}
+[call] .call-input input[type="text"] {
+    width: 260px;
+    height: 50px;
+    padding: 5px 5px;
+    background-color: var(--color-gray);
+    border: none;
+    border-radius: 12px;
+    color: var(--color-light);
+    outline: none;
+    color: var(--color-black);
+    font-size: .6em;
+}
 
-    [codar-banner] [button] a {
-        font-weight: 400;
-        font-size: .9em ;
-    }
+[call] .call-input input[type="text"]::placeholder {
+    color: #807979;
+    font-size: 1.6em;
+    font-family: var(--font);
+    padding: 2em 0 0 1em;
+}
 
+[call] .call-input .button {
+    margin-left: .5em;
+}
+
+[call] .call-input .button a {
+    padding: 16px 40px;
 }
