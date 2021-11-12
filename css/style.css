@@ -251,30 +251,22 @@ footer {
     justify-items: center;
     background-color: var(--color-black);
 }
-.codar-footer,
-.about-codar,
-.about-contacts,
-.about-social {
+footer div {
     margin-top: 3.5em;
 }
-.codar-footer h5 {
-    font-size: 2.2em;
-    font-weight: 400;
-    color: var(--color-light);
-}
 
-.about-codar h5,
-.about-contacts h5,
-.about-social h5 {
+footer h5 {
     font-size: 1.1em;
     font-weight: 400;
     color: var(--color-light);
 }
 
-.codar-footer h6,
-.about-codar h6,
-.about-contacts h6,
-.about-social h6 {
+.codar-footer h5 {
+    font-size: 2.2em;
+    font-weight: 400;
+    color: var(--color-light);
+}
+footer h6 {
     font-size: .8em;
     font-weight: 400;
     color: var(--color-light);
