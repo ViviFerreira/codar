@@ -1,0 +1,25 @@
+{
+  "name": "codar",
+  "version": "1.0.0",
+  "description": "- HTML<br>\r - CSS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViviFerreira/codar.git"
+  },
+  "keywords": [],
+  "author": "Viviane Ferreira",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-uglifycss": "1.0.9",
+    "gulp-concat": "2.6.1"
+  },
+  "bugs": {
+    "url": "https://github.com/ViviFerreira/codar/issues"
+  },
+  "homepage": "https://github.com/ViviFerreira/codar#readme"
+}
