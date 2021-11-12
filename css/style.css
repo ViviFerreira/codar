@@ -9,7 +9,7 @@
 :root { 
     --font: 'Roboto', sans-serif;
     --color-red: #D6000D;
-    --color-black: #212121;
+    --color-black: #000000;
     --color-light: #FFFFFF;
     --color-gray: #DCDCDC;
 }
@@ -191,8 +191,9 @@ a {
 
 [depositions] {
     display: flex;
+    height: 70vh;
     justify-content: center;
-    margin-top: 8em;
+    margin-top: 5em;
 }
 
 [depositions] .group-cards {
@@ -237,8 +238,67 @@ a {
     margin-top: .3em;
     font-size: 1.7em;
 }
+
 [depositions] .card .card-company {
     margin-top: .1em;
     font-size: 1.1em;
     font-weight: 600;
 }
+
+footer {
+    display: grid;
+    grid-template: 55vh / repeat(4, 1fr);
+    justify-items: center;
+    background-color: var(--color-black);
+}
+.codar-footer,
+.about-codar,
+.about-contacts,
+.about-social {
+    margin-top: 3.5em;
+}
+.codar-footer h5 {
+    font-size: 2.2em;
+    font-weight: 400;
+    color: var(--color-light);
+}
+
+.about-codar h5,
+.about-contacts h5,
+.about-social h5 {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: var(--color-light);
+}
+
+.codar-footer h6,
+.about-codar h6,
+.about-contacts h6,
+.about-social h6 {
+    font-size: .8em;
+    font-weight: 400;
+    color: var(--color-light);
+    margin-top: 1em;
+}
+
+.about-contacts span {
+    margin-top: 1em;
+}
+
+footer span {
+    display: block;
+}
+
+.about-social ul {
+    margin-top: 1em;
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    justify-items: center;
+}
+
+.about-social ul li {
+    list-style: none;
+    font-size: 1.3em;
+}
+
+
