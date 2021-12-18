@@ -18,11 +18,12 @@ html {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 [codar-page] {
     font-family: var(--font);
-    font-size: 25px;
+    font-size: 2.5em;
     color: var(--color-red);
     background-color: var(--color-light);
 }
@@ -124,7 +125,7 @@ a {
 }
 
 [options] ul {
-    list-style-image: url('../assets/img/check.png');
+    list-style-image: url('../img/check.png');
     justify-self: center;
 }
 
@@ -292,5 +293,4 @@ footer span {
     list-style: none;
     font-size: 1.3em;
 }
-
 
